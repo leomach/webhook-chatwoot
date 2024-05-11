@@ -5,11 +5,11 @@ app.use(express.json());
 
 app.get('/', (req, res, next) => {
   console.log('GET /', req.body);
-  res.send(res.body);
+  res.send(req.body);
 })
 app.post('/post', (req, res, next) => {
   console.log('GET /', req.body);
-  res.send(res.body);
+  res.send(req.body);
 })
 
 app.listen(process.env.PORT, () => {
